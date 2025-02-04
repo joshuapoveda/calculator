@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyFont", monospace, sans-serif;
+  color: #ffffff;
+  background-color: #242325;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.number-bar {
+  display: flex;
+  height: 75px;
+  background-color: white;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: #000000;
+  font-size: 2.2em;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.digit {
+  background-color: #ffff;
+  width: 75px;
+  height: 75px;
+  color: #000000;
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.operators {
+  width: 124px;
+  height: 75px;
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+img {
+  height: 42px;
+  width: 42px;
+}
+
+.multiply {
+  background-color: #f3f0c6;
+  color: #000000;
+}
+.addition {
+  background-color: #c9c7f5;
+  color: #000000;
+}
+.minus {
+  background-color: #f1bff7;
+  color: #000000;
+}
+.division {
+  background-color: #fecdcd;
+  color: #000000;
+}
+
+.evaluate {
+  background-color: #98ffa1;
+  color: #000000;
+  width: 180px;
+  height: 75px;
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  grid-column: span 2;
+  width: auto;
+}
+.clear {
+  background-color: #000000;
+  border: #fff solid 2px;
+  width: 124px;
+  height: 75px;
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  grid-area: fifth-row;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.interface {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(25px, 90px)); */
+  /* grid-template-columns: 75px 75px 75px 124px;
+  grid-template-rows: 75px 75px 75px 75px 75px;
+  justify-content: center; */
+  grid-gap: 30px;
+
+  display: grid;
+  grid-template-columns: 75px 75px 75px 124px;
+  grid-template-rows: repeat(5, 75px);
+  grid-template-areas:
+    "first-row"
+    "second-row"
+    "third-row"
+    "fourth-row"
+    "fifth-row";
+}

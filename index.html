@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./reset-style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Calculator</h1>
+      <div class="container">
+        <div class="number-bar"></div>
+        <div class="interface">
+          <div class="digit" onclick="inputDigit(1)">1</div>
+          <div class="digit" onclick="inputDigit(2)">2</div>
+          <div class="digit" onclick="inputDigit(3)">3</div>
+          <div class="operators multiply" onclick="operate('*')">
+            <img src="./assets/icons/asterisk.svg"/>
+          </div>
+          <div class="digit" onclick="inputDigit(4)">4</div>
+          <div class="digit" onclick="inputDigit(5)">5</div>
+          <div class="digit" onclick="inputDigit(6)">6</div>
+          <div class="operators addition" onclick="operate('+');">
+            <img src="./assets/icons/plus.svg"/>
+          </div>
+          <div class="digit" onclick="inputDigit(7)">7</div>
+          <div class="digit" onclick="inputDigit(8)">8</div>
+          <div class="digit" onclick="inputDigit(9)">9</div>
+          <div class="operators minus" onclick="operate('-')">
+            <img src="./assets/icons/minus.svg"/>
+          </div>
+          <div class="evaluate" onclick="solution()">
+            <img src="./assets/icons/equal.svg"/>
+          </div>
+          <div class="digit" onclick="inputDigit(0)">0</div>
+          <div class="operators division" onclick="operate('/')">
+            <img src="./assets/icons/divide.svg"/>
+          </div>
+          <div class="clear" onclick="clearDisplay();">C</div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
