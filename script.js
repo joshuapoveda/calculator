@@ -1,3 +1,4 @@
+//variables
 let numbers = [];
 let digit = "";
 let solved = false;
@@ -28,7 +29,7 @@ const operate = (symbol) => {
   } else {
     console.log("No input");
   }
-};
+}
 
 const solution = () => {
   //adds the final operand to the array
